@@ -1,32 +1,32 @@
-# NekoBox for Android (liu-xindi fork)
+# NekoBox for Android (tyldx fork)
 
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Releases](https://img.shields.io/github/v/release/liu-xindi/NekoBoxForAndroid)](https://github.com/liu-xindi/NekoBoxForAndroid/releases)
+[![Releases](https://img.shields.io/github/v/release/tyldx/NekoBoxForAndroid)](https://github.com/tyldx/NekoBoxForAndroid/releases)
 [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 基于 [MatsuriDayo/NekoBoxForAndroid](https://github.com/MatsuriDayo/NekoBoxForAndroid) 的 fork,加入了应用内的 Tailscale 配置界面.
 
-- 内核: [liu-xindi/sing-box](https://github.com/liu-xindi/sing-box) `1.12.25-neko-1`,即官方 v1.12.25 加上 MatsuriDayo neko 补丁 (上游为 1.12.19-neko).
+- 内核: [tyldx/sing-box](https://github.com/tyldx/sing-box) `1.12.25-neko-1`,即官方 v1.12.25 加上 MatsuriDayo neko 补丁 (上游为 1.12.19-neko).
 - Tailscale: 可在应用内新建 Tailscale endpoint 配置,字段包括 auth key、control URL、hostname、ephemeral、accept routes、exit node、advertise routes. Tailscale 库版本为 1.92.4 (`sagernet/tailscale v1.92.4-sing-box-1.13-mod.10`),支持用 `sha256-raw` 固定证书的自建 DERP.
 - 包名为 `com.cheng31.nekobox`,可与官方 NekoBox 同时安装.
 
 要访问 tailnet 内的地址,需要添加一条路由规则 (例如匹配 IP 段 `100.64.0.0/10`,不支持 MagicDNS),出站选择 Tailscale 配置.
 
-下载: [Releases](https://github.com/liu-xindi/NekoBoxForAndroid/releases)\
-问题反馈: [本仓库的 Issues](https://github.com/liu-xindi/NekoBoxForAndroid/issues)
+下载: [Releases](https://github.com/tyldx/NekoBoxForAndroid/releases)\
+问题反馈: [本仓库的 Issues](https://github.com/tyldx/NekoBoxForAndroid/issues)
 
 ---
 
 A fork of [MatsuriDayo/NekoBoxForAndroid](https://github.com/MatsuriDayo/NekoBoxForAndroid) with an in-app Tailscale profile editor.
 
-- Kernel: [liu-xindi/sing-box](https://github.com/liu-xindi/sing-box) `1.12.25-neko-1`, i.e. official v1.12.25 plus the MatsuriDayo neko patches (upstream ships 1.12.19-neko).
+- Kernel: [tyldx/sing-box](https://github.com/tyldx/sing-box) `1.12.25-neko-1`, i.e. official v1.12.25 plus the MatsuriDayo neko patches (upstream ships 1.12.19-neko).
 - Tailscale: create a Tailscale endpoint profile in the app, with auth key, control URL, hostname, ephemeral, accept routes, exit node and advertise routes. The Tailscale library is 1.92.4 (`sagernet/tailscale v1.92.4-sing-box-1.13-mod.10`), which supports self-hosted DERP relays pinned with `sha256-raw`.
 - Package name is `com.cheng31.nekobox`, so it installs alongside the official NekoBox.
 
 To reach tailnet addresses, add a route rule (e.g. matching the IP range `100.64.0.0/10`; MagicDNS is not supported) whose outbound is the Tailscale profile.
 
-Downloads: [Releases](https://github.com/liu-xindi/NekoBoxForAndroid/releases)\
-Issues: [this repository's Issues](https://github.com/liu-xindi/NekoBoxForAndroid/issues)
+Downloads: [Releases](https://github.com/tyldx/NekoBoxForAndroid/releases)\
+Issues: [this repository's Issues](https://github.com/tyldx/NekoBoxForAndroid/issues)
 
 ## Credits
 
